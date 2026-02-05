@@ -5,8 +5,8 @@ import sqlite3
 from datetime import datetime, timedelta
 import pytz
 
-TOKEN = ""
-GUILD_ID =   # int
+TOKEN = bottoken
+GUILD_ID = serverid  # int
 
 EST = pytz.timezone("US/Eastern")
 
@@ -177,3 +177,4 @@ async def editrace(
     await interaction.response.send_message("✏️ Race updated.", ephemeral=True)
 
 bot.run(TOKEN)
+
